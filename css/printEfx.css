@@ -6,3 +6,45 @@
 .ss__text{
     color: white;
 }
+
+.ss__star .fa-star{
+    color: #f5cb99;
+    font-size: larger;
+}
+.ss__star .fa-star-half-o{
+    color: #f5cb99;
+    font-size: larger;
+}
+
+.ss__models.active{
+    background: white;
+    border-top: 3px solid !important;
+    border-bottom: none !important;
+    border-color: none !important;
+}
+
+.ss__models a, .ss__retails a{
+    background: aliceblue;
+}
+
+.ss__retails.active{
+    background: white;
+    border-top: 3px solid !important;
+    border-bottom: none !important;
+    border-color: none !important;
+}
+#ss-models-tab, #ss-retails-tab{
+    border-bottom: none;
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .checkbox-list__header b{
+        display: none !important;
+    }
+    .ss__pf__link{
+        font-weight: bold;
+        color: inherit !important;
+        text-decoration: none;
+    }
+  }
