@@ -45,6 +45,24 @@
     .ss__pf__link{
         font-weight: bold;
         color: inherit !important;
-        text-decoration: none;
+        text-decoration: none !important;
     }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .checkbox-list__header b{
+       
+    }
+    .ss__pf__link{
+        display: none !important;
+    }
+  }
+  .ss-flex-flow{
+    flex-flow: row-reverse;
+  }
+  button span{
+      font-size:smaller;
+  }
+  .ss__modal__cancel{
+      outline: none;
   }
