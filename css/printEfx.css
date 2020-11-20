@@ -66,3 +66,6 @@
   .ss__modal__cancel{
       outline: none;
   }
+  .calculate-profit__table tr .cpt-col .currency-wrapper .currency-rectangle {
+    width: 37px !important;
+}
