@@ -69,3 +69,7 @@
   .calculate-profit__table tr .cpt-col .currency-wrapper .currency-rectangle {
     width: 37px !important;
 }
+.ss__container__main
+{
+    overflow-x: hidden;
+}
