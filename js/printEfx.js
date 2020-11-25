@@ -10,6 +10,13 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("openNav").style.display = "inline-block";
 }
+
+$(document).ready(function () {
+  $('select').selectize({
+      sortField: 'text'
+  });
+}); 
+
 // function myFunction() {
 //   alert('jkjk');
 //   document.getElementById("myDIV").style.position = "fixed";

@@ -73,3 +73,19 @@
 {
     overflow-x: hidden;
 }
+
+.ss__container__ordering{
+    background: #f8f8f8;
+}
+
+.ss__nav__tab{
+    border-bottom: none !important;
+}
+
+#ss-order-myself-container > form > div > div.selectize-control.form-control.fa.single{
+    text-align: left !important;
+}
+
+.ss__text__align{
+    text-align: left;
+}
