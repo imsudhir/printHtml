@@ -36,6 +36,7 @@
 
 .nav-header {
   float: left;
+  text-align: center;
 }
 
 .navigation-hidden .nav-header {
@@ -56,8 +57,9 @@
 }
 
 .navigation-portrait .nav-brand {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 48px;
+  position: absolute;
 }
 
 .nav-logo > img {
@@ -422,7 +424,7 @@
 .navigation-portrait .nav-search-inner input[type="text"],
 .navigation-portrait .nav-search-inner input[type="search"] {
   height: 48px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 48px;
 }
 
@@ -893,7 +895,7 @@
 .megamenu-list > li.megamenu-list-title > a {
   font-size: 12px;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #343a40;
 }
 
@@ -919,7 +921,7 @@
 
 .nav-menu > li > a {
   color: #343a40;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .nav-dropdown > li > a {
@@ -962,4 +964,88 @@
   .megamenu-list > li > a {
     width: 65%;
   }
+}
+
+
+
+
+@media only screen and (min-width: 992px) {
+  .ss__menu__icon, .ss__nav__search{
+    display: none;
+  }
+  .nav-header {
+    display: none;
+  } 
+  .ss__right__menu
+{
+  float: right; 
+  margin-right: 70px; 
+  margin-top: 13px; 
+  display: none !important;
+}
+}
+
+  @media only screen and (max-width: 991px) {
+    .ss__container{
+      width: 98% !important;
+    }
+    .nav-header {
+      text-align: center;
+    }
+    .nav-toggle {
+      width: 30px;
+      height: 30px;
+      padding: 6px 2px 0;
+      position: absolute;
+      top: 50%;
+      margin-top: -14px;
+      display: none;
+      cursor: pointer;
+    }
+    .nav-search-button {
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      cursor: pointer;
+      background-color: #fbfcfd;
+      display: inline;
+    }
+    .ss__menu__icon{
+      font-size: medium !important;
+    }
+    .ss__top__header{
+      display: none;
+    }
+    
+}
+
+
+.header #logo, .header .logo--default{
+  height: auto !important;
+  display: block;
+  position: relative;
+  width: 100%;
+  background-size: auto;
+}
+}
+
+.nav-menu > li > a {
+  color: #343a40;
+  text-transform: capitalize !important;
+}
+
+.ss__right__menu
+{
+  float: right; 
+  margin-right: 70px; 
+  margin-top: 13px; 
+  display:flex;
+}
+
+ul.nav-menu.align-to-left li a {
+  font-size: 17px;
+  color: #555;
+  font-family: inherit;
+  letter-spacing: .5px;
 }

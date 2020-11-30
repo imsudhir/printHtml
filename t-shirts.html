@@ -23,6 +23,7 @@
             <link href="https://static.cdn.printful.com/dist/app/css/widgets.befc9e4df3ba1326f5cb.css" rel="stylesheet">
             <link href="css/bootstrap.min.css" rel="stylesheet">
             <link href="css/printEfx.css" rel="stylesheet">
+            <link rel="stylesheet" href="css/printEfxNavStyle.css">
             <link href="https://static.cdn.printful.com/static/v789/icons/style.css" rel="stylesheet">
             <link href="css/layout.54804480449cb09fb8a3.css" rel="stylesheet">
             <link href="css/layout-sass.726b26f5b57a2938cccc.css" rel="stylesheet">
@@ -112,200 +113,385 @@
             <!-- ::::::::::::::::::::::::::::::::::::::::::::Top bar start::::::::::::::::::::::::::::::::::::::::::::::::: -->
             <div id="app-header" class="header header--guest">
 
+            <div class="ss__top__header header__userbar pf-ui-body" id="userbar"">
+                <div class="container pf-px-0">
+                    <div class="pf-d-block pf-d-md-none pf-w-100 pf-h-100 pf-d-flex pf-position-absolute pf-align-items-center"
+                        style="top: 0">
+                        <a href="/" id="logo" class="logo--default" title="Printful" style="z-index: 2;">
+                            <!-- TODO: Remove on Jan 2021 -->
+                            <img src="http://printful.projectdemotest.com/images/logo.png">
+                        </a>
+                    </div>
 
-                <div class="header__userbar pf-ui-body" id="userbar">
-                    <div class="container pf-px-0">
-                        <div class="pf-d-block pf-d-md-none pf-w-100 pf-h-100 pf-d-flex pf-position-absolute pf-align-items-center"
-                            style="top: 0">
+                    <div class="col-3 col-md-3 col-lg-2" style="z-index: 3;">
+                        <div class="pf-d-none pf-d-md-block">
                             <a href="/" id="logo" class="logo--default" title="Printful" style="z-index: 2;">
                                 <!-- TODO: Remove on Jan 2021 -->
-                                <video class="pf-w-100 pf-d-lg-none holiday-small-logo-video" muted autoplay loop playsinline>
-                                    <source src="https://static.cdn.printful.com/static/v789/videos/small-logo.mp4"
-                                        type="video/mp4">
-                                </video>
-                                <!-- TODO: Remove on Jan 2021 -->
-                                <video class="pf-d-none pf-d-lg-inline-block holiday-full-logo-video" muted autoplay loop
-                                    playsinline>
-                                    <source src="https://static.cdn.printful.com/static/v789/videos/full-logo.mp4"
-                                        type="video/mp4">
-                                </video>
+                                <img src="http://printful.projectdemotest.com/images/logo.png">
                             </a>
                         </div>
-
-                        <div class="col-3 col-md-1 col-lg-2" style="z-index: 3;">
-                            <div class="pf-d-none pf-d-md-block">
-                                <a href="/" id="logo" class="logo--default" title="Printful" style="z-index: 2;">
-                                    <!-- TODO: Remove on Jan 2021 -->
-                                    <video class="pf-w-100 pf-d-lg-none holiday-small-logo-video" muted autoplay loop
-                                        playsinline>
-                                        <source src="https://static.cdn.printful.com/static/v789/videos/small-logo.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                    <!-- TODO: Remove on Jan 2021 -->
-                                    <video class="pf-d-none pf-d-lg-inline-block holiday-full-logo-video" muted autoplay loop
-                                        playsinline>
-                                        <source src="https://static.cdn.printful.com/static/v789/videos/full-logo.mp4"
-                                            type="video/mp4">
-                                    </video>
-                                </a>
-                            </div>
-                            <!-- Mobile icons -->
-                            <div class="pf-d-md-none">
-                                <div class="navigation-wrap">
-                                    <div id="mobile-sliding-menu-cta" class="navbar-header" style="flex: 1;">
-                                        <button type="button" class="navbar-toggle  pf-py-0 pf-px-8">
-                                            <span class="red-indicator"></span>
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="close-icon"></span>
-                                            <span class="toggle-text"><span>Menu</span></span>
-                                        </button> </div>
+                        <!-- Mobile icons -->
+                    </div>
+                    <div class="col-9 col-md-9 col-lg-10 pf-d-flex pf-align-items-center pf-position-relative pf-p-0">
+                        <div class="col-6 col-md-9 col-lg-5 col-xl-6" style="position: static">
+                            <!-- Search Bar -->
+                            <div id="sitewide-search-724e080d" class="sitewide-search__user-bar">
+                                <div id="sitewide-search" class="pf-w-100 pf-py-8 pf-py-sm-12 pf-py-md-0">
+                                    <div class=" sitewide-search--closed">
+                                        <span
+                                            class="pf-i pf-i-24 pf-position-absolute pf-mx-12 pf-my-8">
+                                        
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                            
+                                            <input
+                                            placeholder="Search PrintEfx" type="search" id="sitewide-search-input"
+                                            name="sitewide-search-input" autocomplete="off" style="text-overflow: ellipsis;"
+                                            class=" pf-px-48">
+                                            <input
+                                            style="opacity: 0; position: absolute; left: 0px; z-index: -1;"><a href="javascript:"
+                                            class="pf-i pf-i-24 pf-i-close pf-position-absolute pf-px-12 pf-py-8"></a>
+                                        <div class="sitewide-search__result-container pf-border pf-border-gray-light pf-d-none">
+                                            <div class="pf-pb-8 pf-py-sm-16">
+                                                <h3 class="pf-p-0 pf-m-0 pf-mx-16 pf-mb-16 pf-i-18 pf-d-none pf-d-sm-block">I'm
+                                                    looking for...</h3>
+                                                <ul></ul>
+                                            </div>
+                                            <div class="pf-px-16 pf-px-sm-32 pf-pb-12 pf-py-sm-16 pf-d-flex pf-flex-column"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="interface-toggle userbar__interface-toggle">
-                                    <button type="button" class="navbar-toggle  pf-py-0 pf-px-8">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="close-icon"></span>
-                                        <span class="toggle-text"><span>Close</span></span>
-                                    </button> </div>
                             </div>
                         </div>
-                        <div class="col-9 col-md-11 col-lg-10 pf-d-flex pf-align-items-center pf-position-relative pf-p-0">
-
-                            <div class="col-6 col-md col-lg-5 col-xl-6" style="position: static">
-                                <!-- Search Bar -->
-
-                                <div id="sitewide-search-6d4748dd" class="sitewide-search__user-bar">
-                                    <div id="sitewide-search" class="pf-w-100 pf-py-8 pf-py-sm-12 pf-py-md-0"></div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md col-lg-7 col-xl-6">
-                                <!-- User buttons and login widget -->
-                                <ul class="pf-d-flex pf-justify-content-end pf-align-items-center pf-m-0 pf-p-0">
-
-
-                                    <li class="pull-right pf-d-flex pf-align-items-center">
-
-                                        <div data-vue-root="EHc6pBDJRhs2jmz1" data-vue-components='["settings-menu"]'
-                                            data-vuex-stores='[]'>
-                                            <settings-menu
-                                                :onboarding-data="{selling_regions_settings_block:false,selling_regions_information_block:false,selling_region_settings_applied:false}"
-                                                </settings-menu>
-                                        </div> <a href="/auth/login" class="header__link pf-mx-8">
-                                            <i class="header__link__icon pf-i pf-i-account pf-i-24"></i>
-                                            <span class="pf-d-none pf-d-md-inline-block header__link__text">Sign in</span>
+                        <div class="col-6 col-md-4 col-lg-7 col-xl-6">
+                            <!-- User buttons and login widget -->
+                            <ul class="pf-d-flex pf-justify-content-end pf-align-items-center pf-m-0 pf-p-0">
+                                <li class="pull-right pf-d-flex pf-align-items-center">
+                                    <div data-vue-root="EHc6pBDJRhs2jmz1" data-vue-components="[&quot;settings-menu&quot;]" data-vuex-stores="[]">
+                                        <settings-menu :onboarding-data="{&quot;selling_regions_settings_block&quot;:false,&quot;selling_regions_information_block&quot;:false,&quot;selling_region_settings_applied&quot;:false}" <="" settings-menu="">
+                                    </settings-menu></div> <a href="#" class="header__link pf-mx-8">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        <span class="pf-d-none pf-d-md-inline-block header__link__text">Sign in</span>
+                                    </a>
+                                    <a href="#" class="header__link pf-mx-8" onclick="beginRegistrationTracking('header', true)">
+                                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                        <span class="pf-d-none pf-d-md-inline-block header__link__text">Sign up</span>
+                                    </a>
+                                </li>
+                                <li class="pf-d-inline-block">
+                                    <div id="js--shopping-cart__df5e79f2" class="pf-cart pf-d-flex pf-ml-md-8 pf-pr-sm-0">
+                                        <a class="header__link pf-d-flex pf-flex-column pf-flex-md-row pf-align-items-center">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;
+                                            <span class="pf-d-none pf-d-md-inline-block pf-text-muted pf-cart__icon-text header__link__text">
+                                                My
+                                                cart</span>
                                         </a>
-                                        <a href="/auth/register" class="header__link pf-mx-8"
-                                            onclick="beginRegistrationTracking('header', true)">
-                                            <i class="header__link__icon pf-i pf-i-account-plus pf-i-24"></i>
-                                            <span class="pf-d-none pf-d-md-inline-block header__link__text">Sign up</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="pf-d-inline-block">
-
-                                        <div id="js--shopping-cart__df5e79f2" class="pf-cart pf-d-flex pf-ml-md-8 pf-pr-sm-0">
-                                            <a
-                                                class="header__link pf-d-flex pf-flex-column pf-flex-md-row pf-align-items-center">
-                                                <i class="header__link__icon pf-i pf-i-cart pf-i-24"></i>
-                                                <span
-                                                    class="pf-d-none pf-d-md-inline-block pf-text-muted pf-cart__icon-text header__link__text">My
-                                                    cart</span>
-                                            </a>
-                                        </div>
-
-                                    </li>
-                                </ul>
-                            </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="header__main  pf-mt-0">
-                    <div class="container ">
-                        <a href="/" id="logo" class="logo--default" title="Printful" style="z-index: 2;">
-                            <!-- TODO: Remove on Jan 2021 -->
-                            <video class="pf-w-100 pf-d-lg-none holiday-small-logo-video" muted autoplay loop playsinline>
-                                <source src="https://static.cdn.printful.com/static/v789/videos/small-logo.mp4"
-                                    type="video/mp4">
-                            </video>
-                            <!-- TODO: Remove on Jan 2021 -->
-                            <video class="pf-d-none pf-d-lg-inline-block holiday-full-logo-video" muted autoplay loop
-                                playsinline>
-                                <source src="https://static.cdn.printful.com/static/v789/videos/full-logo.mp4" type="video/mp4">
-                            </video>
-                        </a>
 
-                        <div class="navbar pf-m-0 main-header__nav-outer" id="top">
-                            <div class="main-header__nav-inner">
-                                <div class="menu-wrap">
-                                    <ul id="nav" class="nav navbar-nav navbar-collapse pull-right">
-                                        <li class="has-submenu"><a href='/custom-products'
-                                                id='navigation-menu-1-toggle'>Products<span class='submenu-caret'></span></a>
-                                            <div class='main-menu-submenu' id='navigation-menu-1'></div>
-                                        </li>
-                                        <li class="has-submenu"><a href='/services' id='navigation-menu-2-toggle'>Services<span
-                                                    class='submenu-caret'></span></a>
-                                            <div class='main-menu-submenu' id='navigation-menu-2'></div>
-                                        </li>
-                                        <li class="has-submenu"><a href='/integrations'
-                                                id='navigation-menu-16-toggle'>Integrations<span
-                                                    class='submenu-caret'></span></a>
-                                            <div class='main-menu-submenu' id='navigation-menu-16'></div>
-                                        </li>
-                                        <li class="has-submenu"><a href='/how-printful-works' id='navigation-menu-42-toggle'>How
-                                                it works<span class='submenu-caret'></span></a>
-                                            <div class='main-menu-submenu' id='navigation-menu-42'></div>
-                                        </li>
-                                        <li><a href='/mockup-generator' id='navigation-menu-49-toggle'>Mockup Generator<span
-                                                    class='submenu-caret'></span></a>
-                                            <div class='main-menu-submenu' id='navigation-menu-49'></div>
-                                        </li>
-                                        <li class="has-submenu"><a href='javascript:void(0);'
-                                                id='navigation-menu-50-toggle'>Resources<span class='submenu-caret'></span></a>
-                                            <div class='main-menu-submenu' id='navigation-menu-50'></div>
-                                        </li>
-                                        <li><a href='/blog' id='navigation-menu-120-toggle'>Blog<span
-                                                    class='submenu-caret'></span></a>
-                                            <div class='main-menu-submenu' id='navigation-menu-120'></div>
-                                        </li>
-                                        <li class="pf-px-16 pf-mt-12 nav__sign-btn pf-d-block pf-d-sm-none"><button
-                                                class="pf-btn pf-btn-primary pf-btn-block"><a href="/auth/register"
-                                                    class="pf-text-white">Sign up</a></button></li>
-                                        <li class="pf-mt-16 pf-mb-12 pf-px-16 pf-mr-16 nav__sign-btn pf-d-block pf-d-sm-none">
-                                            <button class="pf-btn pf-btn-secondary pf-btn-block"><a class="pf-text-dark"
-                                                    href="/auth/login">Sign in</a></button></li>
-                                        <li class="has-submenu js-user-language pf-d-md-none"><a href="#"
-                                                id="languages-menu-toggle"><span
-                                                    class="pf-i pf-i-translate pf-i-24 pf-text-gray pf-mr-8"></span>EN<span
-                                                    class="submenu-caret"></span></a>
-                                            <div class="main-menu-submenu" id="languages-menu"></div>
-                                        </li>
-                                        <li class="pf-d-md-none js-user-settings-toggle" onClick="return false;"><a
-                                                href="#"><span
-                                                    class="pf-i pf-i-currency-usd pf-text-gray pf-i-24 pf-mr-8"></span>USD</a>
-                                        </li>
-                                        <li class="has-submenu js-env-selling-region pf-d-md-none"><a href="#"
-                                                id="selling-region-menu-toggle"><span
-                                                    class="pf-i pf-i-map-marker pf-text-gray pf-i-24 pf-mr-8 pf-position-relative"><span
-                                                        class="red-indicator"></span></span><span
-                                                    class="menu-label">Worldwide</span><span class="submenu-caret"></span></a>
-                                            <div class="main-menu-submenu" id="selling-region-menu"></div>
-                                        </li>
-                                    </ul>
-                                    <div id="bullet-progress-bar" class="pull-right margin-top-10 bullet-progress-bar"></div>
-                                </div>
+
+
+
+
+ 
+ 
+
+
+            <div class="header__userbar pf-ui-body" id="userbar">
+                <header class="header_area">
+                    <div class="main_header_area animated">
+                      <div class="container ss__container">
+                        <nav id="navigation1" class="navigation">
+                          <div class="nav-header">
+                            <a class="nav-brand" href="#">
+                                <img src="http://printful.projectdemotest.com/images/logo.png">
+                            </a>
+                            <div class="nav-toggle"></div>
+                          </div>
+						  
+						  <div class="ss__right__menu">
+						  
+						<a href="#" class="header__link pf-mx-8">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <span class="pf-d-none pf-d-md-inline-block header__link__text">Sign in</span>
+                                </a>
+								
+								<a href="#" class="header__link pf-mx-8">
+                                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                    <span class="pf-d-none pf-d-md-inline-block header__link__text">Sign up</span>
+                                </a>
+								
+								<a href="#" class="header__link pf-mx-8">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span class="pf-d-none pf-d-md-inline-block header__link__text">
+                                            My cart</span>
+                                    </a>
+								
+								</div>
+						  
+                          <div class="ss__nav__search nav-search">
+                            <div class="nav-search-button">
+                                <i class="nav-search-icon"></i>
+                                
                             </div>
-                        </div>
+                            <form>
+                              <div class="nav-search-inner">
+                                <input type="search" name="search" placeholder="Search..."/>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="nav-menus-wrapper">
+                            <ul class="nav-menu align-to-left">
+                              <li>
+                                <a href="#">Products</a>
+                                <ul class="nav-dropdown">
+                                  <li>
+                                    <a href="#">Menu Level 2</a>
+                                    <ul class="nav-dropdown">
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                      <li><a href="#" target="_blank">Link 6</a></li>
+                                      <li><a href="#" target="_blank">Link 7</a></li>
+                                      <li><a href="#" target="_blank">Link 8</a></li>
+                                      <li><a href="#" target="_blank">Link 9</a></li>
+                                      <li><a href="#" target="_blank">Link 10</a></li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a href="#">Menu Level 2</a>
+                                    <ul class="nav-dropdown">
+                                      <li>    
+                                        <a href="#">Menu Level 3</a>
+                                        <ul class="nav-dropdown">
+                                          <li><a href="#" target="_blank">Link 1</a></li>
+                                          <li><a href="#" target="_blank">Link 2</a></li>
+                                          <li><a href="#" target="_blank">Link 3</a></li>
+                                          <li><a href="#" target="_blank">Link 4</a></li>
+                                          <li><a href="#" target="_blank">Link 5</a></li>
+                                        </ul>
+                                      </li>
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a href="#">Menu Level 2</a>
+                                    <ul class="nav-dropdown">
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                  </li>
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">Services</a>
+                                <ul class="nav-dropdown">
+                                  <li>
+                                    <a href="#">Menu Level 2</a>
+                                    <ul class="nav-dropdown">
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                      <li><a href="#" target="_blank">Link 6</a></li>
+                                      <li><a href="#" target="_blank">Link 7</a></li>
+                                      <li><a href="#" target="_blank">Link 8</a></li>
+                                      <li><a href="#" target="_blank">Link 9</a></li>
+                                      <li><a href="#" target="_blank">Link 10</a></li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a href="#">Menu Level 2</a>
+                                    <ul class="nav-dropdown">
+                                      <li>    
+                                        <a href="#">Menu Level 3</a>
+                                        <ul class="nav-dropdown">
+                                          <li><a href="#" target="_blank">Link 1</a></li>
+                                          <li><a href="#" target="_blank">Link 2</a></li>
+                                          <li><a href="#" target="_blank">Link 3</a></li>
+                                          <li><a href="#" target="_blank">Link 4</a></li>
+                                          <li><a href="#" target="_blank">Link 5</a></li>
+                                        </ul>
+                                      </li>
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a href="#">Menu Level 2</a>
+                                    <ul class="nav-dropdown">
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                  </li>
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">Integrations</a>
+                                <div class="megamenu-panel">
+                                  <div class="megamenu-lists">
+                                    <ul class="megamenu-list list-col-4">
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                      <li><a href="#" target="_blank">Link 6</a></li>
+                                      <li><a href="#" target="_blank">Link 7</a></li>
+                                      <li><a href="#" target="_blank">Link 8</a></li>
+                                    </ul>
+                                    <ul class="megamenu-list list-col-4">
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                      <li><a href="#" target="_blank">Link 6</a></li>
+                                      <li><a href="#" target="_blank">Link 7</a></li>
+                                      <li><a href="#" target="_blank">Link 8</a></li>
+                                    </ul>
+                                    <ul class="megamenu-list list-col-4">
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                      <li><a href="#" target="_blank">Link 6</a></li>
+                                      <li><a href="#" target="_blank">Link 7</a></li>
+                                      <li><a href="#" target="_blank">Link 8</a></li>
+                                    </ul>
+                                    <ul class="megamenu-list list-col-4">
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                      <li><a href="#" target="_blank">Link 6</a></li>
+                                      <li><a href="#" target="_blank">Link 7</a></li>
+                                      <li><a href="#" target="_blank">Link 8</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <a href="#">How It Works</a>
+                                <div class="megamenu-panel">
+                                  <div class="megamenu-lists">
+                                    <ul class="megamenu-list list-col-4">
+                                      <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                    <ul class="megamenu-list list-col-4">
+                                      <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                    <ul class="megamenu-list list-col-4">
+                                      <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                    <ul class="megamenu-list list-col-4">
+                                      <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+                              <li><a href="#">Mockup Generator</a></li>
+                              <li>
+                                <a href="#">Resources</a>
+                                <div class="megamenu-panel">
+                                  <div class="megamenu-lists">
+                                    <ul class="megamenu-list list-col-4">
+                                      <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                    <ul class="megamenu-list list-col-4">
+                                      <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                    <ul class="megamenu-list list-col-4">
+                                      <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                    <ul class="megamenu-list list-col-4">
+                                      <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+                              <li><a href="#">Blog</a></li>
 
-
-                        <div id="sitewide-search-560d001c" class="sitewide-search__menu-bar pf-px-8">
-                        </div>
+                            </ul>
+                          </div>
+                        </nav>
+                      </div>
                     </div>
+                  </header>
                 </div>
             </div>
 
@@ -3598,6 +3784,7 @@
                 </div>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+                <script  src="js/printEfxNavScript.js"></script>
         </body>
 
         </html>

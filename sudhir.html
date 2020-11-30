@@ -1,0 +1,2454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes" />
+    <title>Printefx: On-Demand Print &amp; Embroidery Fulfillment and Warehousing Services</title>
+    <meta name="og:type" content="website">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/printEfxNavStyle.css">
+    <link href="css/printEfxlayout.css" rel="stylesheet">
+    <link href="css/printEfxlayoutsass.css" rel="stylesheet">
+    <link href="css/printEfxpopup.css" rel="stylesheet">
+    <link href="css/printEfxcustom1.css" rel="stylesheet">
+    <link href="css/printEfxpagestyle1.css" rel="stylesheet">
+    <link href="css/slick.min.css" rel="stylesheet">
+    <link href="css/printEfxpagestyle2.css" rel="stylesheet">
+    <link href="css/printEfxcomponent.css" rel="stylesheet">
+    <link href="css/customprintefx.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/dummy.css"> -->
+
+
+</head> 
+
+<body id="application" class="guest pf-lang--en">
+
+
+    <!-- ::::::::::::::::::::::::::::::::::::::::::::Top bar start::::::::::::::::::::::::::::::::::::::::::::::::: -->
+    <div id="app-header" class="header header--guest">
+
+        <div class="ss__top__header header__userbar pf-ui-body" id="userbar"">
+            <div class="container pf-px-0">
+                <div class="pf-d-block pf-d-md-none pf-w-100 pf-h-100 pf-d-flex pf-position-absolute pf-align-items-center"
+                    style="top: 0">
+                    <a href="/" id="logo" class="logo--default" title="Printful" style="z-index: 2;">
+                        <!-- TODO: Remove on Jan 2021 -->
+                        <img src="http://printful.projectdemotest.com/images/logo.png">
+                    </a>
+                </div>
+
+                <div class="col-3 col-md-3 col-lg-2" style="z-index: 3;">
+                    <div class="pf-d-none pf-d-md-block">
+                        <a href="/" id="logo" class="logo--default" title="Printful" style="z-index: 2;">
+                            <!-- TODO: Remove on Jan 2021 -->
+                            <img src="http://printful.projectdemotest.com/images/logo.png">
+                        </a>
+                    </div>
+                    <!-- Mobile icons -->
+                </div>
+                <div class="col-9 col-md-9 col-lg-10 pf-d-flex pf-align-items-center pf-position-relative pf-p-0">
+                    <div class="col-6 col-md-9 col-lg-5 col-xl-6" style="position: static">
+                        <!-- Search Bar -->
+                        <div id="sitewide-search-724e080d" class="sitewide-search__user-bar">
+                            <div id="sitewide-search" class="pf-w-100 pf-py-8 pf-py-sm-12 pf-py-md-0">
+                                <div class=" sitewide-search--closed">
+                                    <span
+                                        class="pf-i pf-i-24 pf-position-absolute pf-mx-12 pf-my-8">
+                                    
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                        
+                                        <input
+                                        placeholder="Search PrintEfx" type="search" id="sitewide-search-input"
+                                        name="sitewide-search-input" autocomplete="off" style="text-overflow: ellipsis;"
+                                        class=" pf-px-48">
+                                        <input
+                                        style="opacity: 0; position: absolute; left: 0px; z-index: -1;"><a href="javascript:"
+                                        class="pf-i pf-i-24 pf-i-close pf-position-absolute pf-px-12 pf-py-8"></a>
+                                    <div class="sitewide-search__result-container pf-border pf-border-gray-light pf-d-none">
+                                        <div class="pf-pb-8 pf-py-sm-16">
+                                            <h3 class="pf-p-0 pf-m-0 pf-mx-16 pf-mb-16 pf-i-18 pf-d-none pf-d-sm-block">I'm
+                                                looking for...</h3>
+                                            <ul></ul>
+                                        </div>
+                                        <div class="pf-px-16 pf-px-sm-32 pf-pb-12 pf-py-sm-16 pf-d-flex pf-flex-column"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-7 col-xl-6">
+                        <!-- User buttons and login widget -->
+                        <ul class="pf-d-flex pf-justify-content-end pf-align-items-center pf-m-0 pf-p-0">
+                            <li class="pull-right pf-d-flex pf-align-items-center">
+                                <div data-vue-root="EHc6pBDJRhs2jmz1" data-vue-components="[&quot;settings-menu&quot;]" data-vuex-stores="[]">
+                                    <settings-menu :onboarding-data="{&quot;selling_regions_settings_block&quot;:false,&quot;selling_regions_information_block&quot;:false,&quot;selling_region_settings_applied&quot;:false}" <="" settings-menu="">
+                                </settings-menu></div> <a href="#" class="header__link pf-mx-8">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <span class="pf-d-none pf-d-md-inline-block header__link__text">Sign in</span>
+                                </a>
+                                <a href="#" class="header__link pf-mx-8" onclick="beginRegistrationTracking('header', true)">
+                                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                    <span class="pf-d-none pf-d-md-inline-block header__link__text">Sign up</span>
+                                </a>
+                            </li>
+                            <li class="pf-d-inline-block">
+                                <div id="js--shopping-cart__df5e79f2" class="pf-cart pf-d-flex pf-ml-md-8 pf-pr-sm-0">
+                                    <a class="header__link pf-d-flex pf-flex-column pf-flex-md-row pf-align-items-center">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;
+                                        <span class="pf-d-none pf-d-md-inline-block pf-text-muted pf-cart__icon-text header__link__text">
+                                            My
+                                            cart</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="header__userbar pf-ui-body" id="userbar">
+            <header class="header_area">
+                <div class="main_header_area animated">
+                  <div class="container ss__container">
+                    <nav id="navigation1" class="navigation">
+                      <div class="nav-header">
+                        <a class="nav-brand" href="#">
+                            <img src="http://printful.projectdemotest.com/images/logo.png">
+                        </a>
+                        <div class="nav-toggle"></div>
+                      </div>
+                      
+                      <div class="ss__right__menu">
+                      
+                    <a href="#" class="header__link pf-mx-8">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span class="pf-d-none pf-d-md-inline-block header__link__text">Sign in</span>
+                            </a>
+                            
+                            <a href="#" class="header__link pf-mx-8">
+                                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                <span class="pf-d-none pf-d-md-inline-block header__link__text">Sign up</span>
+                            </a>
+                            
+                            <a href="#" class="header__link pf-mx-8">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="pf-d-none pf-d-md-inline-block header__link__text">
+                                        My cart</span>
+                                </a>
+                            
+                            </div>
+                      
+                      <div class="ss__nav__search nav-search">
+                        <div class="nav-search-button">
+                            <i class="nav-search-icon"></i>
+                            
+                        </div>
+                        <form>
+                          <div class="nav-search-inner">
+                            <input type="search" name="search" placeholder="Search..."/>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="nav-menus-wrapper">
+                        <ul class="nav-menu align-to-left">
+                          <li>
+                            <a href="#">Products</a>
+                            <ul class="nav-dropdown">
+                              <li>
+                                <a href="#">Menu Level 2</a>
+                                <ul class="nav-dropdown">
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                  <li><a href="#" target="_blank">Link 6</a></li>
+                                  <li><a href="#" target="_blank">Link 7</a></li>
+                                  <li><a href="#" target="_blank">Link 8</a></li>
+                                  <li><a href="#" target="_blank">Link 9</a></li>
+                                  <li><a href="#" target="_blank">Link 10</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">Menu Level 2</a>
+                                <ul class="nav-dropdown">
+                                  <li>    
+                                    <a href="#">Menu Level 3</a>
+                                    <ul class="nav-dropdown">
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                  </li>
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">Menu Level 2</a>
+                                <ul class="nav-dropdown">
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#" target="_blank">Link 1</a></li>
+                              <li><a href="#" target="_blank">Link 2</a></li>
+                              <li><a href="#" target="_blank">Link 3</a></li>
+                              <li><a href="#" target="_blank">Link 4</a></li>
+                              <li><a href="#" target="_blank">Link 5</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">Services</a>
+                            <ul class="nav-dropdown">
+                              <li>
+                                <a href="#">Menu Level 2</a>
+                                <ul class="nav-dropdown">
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                  <li><a href="#" target="_blank">Link 6</a></li>
+                                  <li><a href="#" target="_blank">Link 7</a></li>
+                                  <li><a href="#" target="_blank">Link 8</a></li>
+                                  <li><a href="#" target="_blank">Link 9</a></li>
+                                  <li><a href="#" target="_blank">Link 10</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">Menu Level 2</a>
+                                <ul class="nav-dropdown">
+                                  <li>    
+                                    <a href="#">Menu Level 3</a>
+                                    <ul class="nav-dropdown">
+                                      <li><a href="#" target="_blank">Link 1</a></li>
+                                      <li><a href="#" target="_blank">Link 2</a></li>
+                                      <li><a href="#" target="_blank">Link 3</a></li>
+                                      <li><a href="#" target="_blank">Link 4</a></li>
+                                      <li><a href="#" target="_blank">Link 5</a></li>
+                                    </ul>
+                                  </li>
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">Menu Level 2</a>
+                                <ul class="nav-dropdown">
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#" target="_blank">Link 1</a></li>
+                              <li><a href="#" target="_blank">Link 2</a></li>
+                              <li><a href="#" target="_blank">Link 3</a></li>
+                              <li><a href="#" target="_blank">Link 4</a></li>
+                              <li><a href="#" target="_blank">Link 5</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">Integrations</a>
+                            <div class="megamenu-panel">
+                              <div class="megamenu-lists">
+                                <ul class="megamenu-list list-col-4">
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                  <li><a href="#" target="_blank">Link 6</a></li>
+                                  <li><a href="#" target="_blank">Link 7</a></li>
+                                  <li><a href="#" target="_blank">Link 8</a></li>
+                                </ul>
+                                <ul class="megamenu-list list-col-4">
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                  <li><a href="#" target="_blank">Link 6</a></li>
+                                  <li><a href="#" target="_blank">Link 7</a></li>
+                                  <li><a href="#" target="_blank">Link 8</a></li>
+                                </ul>
+                                <ul class="megamenu-list list-col-4">
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                  <li><a href="#" target="_blank">Link 6</a></li>
+                                  <li><a href="#" target="_blank">Link 7</a></li>
+                                  <li><a href="#" target="_blank">Link 8</a></li>
+                                </ul>
+                                <ul class="megamenu-list list-col-4">
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                  <li><a href="#" target="_blank">Link 6</a></li>
+                                  <li><a href="#" target="_blank">Link 7</a></li>
+                                  <li><a href="#" target="_blank">Link 8</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <a href="#">How It Works</a>
+                            <div class="megamenu-panel">
+                              <div class="megamenu-lists">
+                                <ul class="megamenu-list list-col-4">
+                                  <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                                <ul class="megamenu-list list-col-4">
+                                  <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                                <ul class="megamenu-list list-col-4">
+                                  <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                                <ul class="megamenu-list list-col-4">
+                                  <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="#">Mockup Generator</a></li>
+                          <li>
+                            <a href="#">Resources</a>
+                            <div class="megamenu-panel">
+                              <div class="megamenu-lists">
+                                <ul class="megamenu-list list-col-4">
+                                  <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                                <ul class="megamenu-list list-col-4">
+                                  <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                                <ul class="megamenu-list list-col-4">
+                                  <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                                <ul class="megamenu-list list-col-4">
+                                  <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                                  <li><a href="#" target="_blank">Link 1</a></li>
+                                  <li><a href="#" target="_blank">Link 2</a></li>
+                                  <li><a href="#" target="_blank">Link 3</a></li>
+                                  <li><a href="#" target="_blank">Link 4</a></li>
+                                  <li><a href="#" target="_blank">Link 5</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="#">Blog</a></li>
+
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </header>
+            </div>
+        </div>
+
+    <!-- ::::::::::::::::::::::::::::::::::::::::::::Top bar end::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+
+
+    <div id="content">
+
+
+        <style>
+            #browserSupport {
+                z-index: 100;
+                position: absolute;
+                top: 15%;
+                right: 5%;
+                width: 487px;
+            }
+
+            @media (max-width: 520px) {
+                #browserSupport {
+                    width: 300px;
+                }
+            }
+
+            #browserSupport .pf-banner__logo {
+                margin-right: 0 !important;
+            }
+        </style>
+
+        <div class="container above-the-fold">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="pf-pt-40 pf-pb-0 pf-pt-md-64 pf-pb-24 pf-pb-md-40">
+                        <div class="row">
+                            <div class="col-md-11 col-xl-9 text-center text-md-left">
+                                <h1 class="pf-h1 pf-mt-0 pf-mb-8">
+                                    Create and sell custom products online </h1>
+                                <p class="pf-ui-subheading-lg pf-text-muted pf-mb-0"> Lorem Ipsum is simply dummy text
+                                    of the printing and typesetting industry.,</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 above-the-fold__img-wrapper pf-pb-16 pf-pb-md-0">
+                    <!-- <video class="video-node center-block pf-w-100 home-animation" loop="" autoplay="" muted=""
+                playsinline="">
+                <source src="https://static.cdn.printful.com/static/v788/images/home/guest-user.mp4"
+                    type="video/mp4">
+            </video> -->
+                    <img class="video-node center-block pf-w-100 home-animation" src="images/Banner.png">
+                </div>
+
+                <div class="col-md-6 ">
+                    <div class="row">
+                        <div class="above-the-fold__btn-area col-12">
+                            <a href="#" onclick="connectShopAction()" dusk="connect-shop-button"
+                                class="pf-btn pf-btn-primary pf-btn-lg pf-mb-12 pf-mr-md-12 above-the-fold__btn">
+                                Start selling </a>
+
+                            <a href="javascript:" onclick="orderAction()"
+                                class="pf-btn pf-btn-secondary pf-btn-lg pf-mb-12 above-the-fold__btn"
+                                dusk="start-order-button">
+                                Order for yourself </a>
+
+                            <p class="pf-text-muted text-center-xs pf-ui-caption pf-mb-0">
+                                <span>Free signup</span> •
+                                <span>No order minimums</span> •
+                                <span>
+                                    260 products </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- "Latest orders from:" block -->
+            <div data-pf-lazyload="9ee5e4b0fd4783da3e4861ef22396ed7">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="pf-mt-40">
+                            <span class="pf-h3 pf-m-0 text-center-xs">
+                                1M+ items shipped every month </span>
+                        </div>
+                        <div class="pf-pt-24 pf-pb-64">
+
+                            <div class="pf-latest-orders">
+
+                                <div id="latest-orders">
+                                    <div class="row">
+                                        <div class="col-4 col-md-6 col-xl-4" style="opacity: 1;">
+                                            <div class="pf-latest-orders__item pf-justify-content-start"><img
+                                                    aria-hidden="true" alt="shipment location"
+                                                    src=" images/location.png" class="img-responsive">
+                                                <div class="text-center-xs pf-mt-8 pf-ml-sm-16 pf-mt-sm-0"><span
+                                                        class="pf-h5 location">Meridian, US</span><br><span
+                                                        class="pf-ui-body text-muted">1 min ago</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 col-md-6 col-xl-4">
+                                            <div class="pf-latest-orders__item pf-justify-content-start"><img
+                                                    aria-hidden="true" alt="shipment location" src="images/location.png"
+                                                    class="img-responsive">
+                                                <div class="text-center-xs pf-mt-8 pf-ml-sm-16 pf-mt-sm-0"><span
+                                                        class="pf-h5 location">Buckeye, US</span><br><span
+                                                        class="pf-ui-body text-muted">7 min ago</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 col-md-6 col-xl-4 pf-d-md-none pf-d-xl-flex">
+                                            <div class="pf-latest-orders__item pf-justify-content-start"><img
+                                                    aria-hidden="true" alt="shipment location" src="images/location.png"
+                                                    class="img-responsive">
+                                                <div class="text-center-xs pf-mt-8 pf-ml-sm-16 pf-mt-sm-0"><span
+                                                        class="pf-h5 location">Chula vista, US</span><br><span
+                                                        class="pf-ui-body text-muted">12 min ago</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="pf-m-0 pf-border-top" />
+
+        <div data-pf-lazyload="">
+            <div id="homepage-services-cards" class="pf-cards pf-my-64 container">
+                <h2 class="pf-h2 pf-mb-0 text-center">What you can do with Printful</h2>
+                <div class="row  pf-align-items-stretch  ">
+
+                    <a href="#" class="col-sm-4 pf-mt-40 pf-mt-md-40">
+                        <div class="pf-cards__item pf-h-100 pf-border">
+                            <img class="pf-border-bottom pf-w-100" src="images/how-it-works-1.png"
+                                alt="Print on demand service">
+                            <div class="pf-m-16">
+                                <h3 class="pf-h5 pf-mb-4 pf-mt-8 ">Print-on-demand</h3>
+                                <p class="pf-ui-body pf-text-muted">lorem ipsumof type and scrambled it to make a type
+                                    specimen book.
+                                    It has survived not only five centuries, It was popularised in the 1960s with the
+                                    and more recently .
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="col-sm-4 pf-mt-40 pf-mt-md-40">
+                        <div class="pf-cards__item pf-h-100 pf-border">
+                            <img class="pf-border-bottom pf-w-100" src="images/how-it-works-2.png"
+                                alt="Custom clothing &amp; products">
+                            <div class="pf-m-16">
+                                <h3 class="pf-h5 pf-mb-4 pf-mt-8 ">Personal custom orders</h3>
+                                <p class="pf-ui-body pf-text-muted">lorem ipsumof type and scrambled it to make a type
+                                    specimen book.
+                                    It has survived not only five centuries, It was popularised in the 1960s with the
+                                    and more recently .</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="/warehousing-fulfillment" class="col-sm-4 pf-mt-40 pf-mt-md-40">
+                        <div class="pf-cards__item pf-h-100 pf-border">
+                            <img class="pf-border-bottom pf-w-100" src="images/how-it-works-3.png"
+                                alt="Warehousing &amp; Fulfillment service">
+                            <div class="pf-m-16">
+                                <h3 class="pf-h5 pf-mb-4 pf-mt-8 ">Warehousing &amp; Fulfillment</h3>
+                                <p class="pf-ui-body pf-text-muted">lorem ipsumof type and scrambled it to make a type
+                                    specimen book.
+                                    It has survived not only five centuries, It was popularised in the 1960s with the
+                                    and more recently .</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <hr class="pf-m-0 pf-border-top" />
+
+        <div data-pf-lazyload="">
+            <div class="pf-py-64" id="">
+                <div class="container">
+                    <div class="text-center col-12 col-xl-10 offset-xl-1 col-lg-12 offset-lg-0 col-sm-10 offset-sm-1">
+                        <h2 class="pf-h2 pf-m-0 pf-mb-8">
+                            <span class="wysiwyg pf-d-block">
+                                <p>Custom products you can drop ship</p>
+                            </span> </h2>
+                        <p class="pf-ui-subheading-lg pf-mt-8 pf-mb-40 pf-text-muted">
+                            <span class="wysiwyg pf-d-block">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.</span>
+                        </p>
+                    </div>
+
+                    <div class="row pf-product-block">
+                        <div class="col-12 col-xl-10 offset-xl-1 col-lg-12 offset-lg-0 col-sm-10 offset-sm-1">
+                            <div class="grid row">
+                                <div class="col-6 col-sm-4 col-md-3 pf-product-block__item-container pf-mb-24">
+                                    <div class="pf-border pf-product-block__item pf-product-block__item-160 pf-text-dark text-center pf-pt-24 pf-px-8"
+                                        style="height: 345px">
+                                        <a href="#">
+                                            <div class="pf-product-block__link pf-text-dark">
+                                                <img class="pf-product-block__image img-responsive center-block"
+                                                    src="images/tshirt-1.jpg" alt="Face mask" title="T-Shirt"
+                                                    loading="lazy" data-src-processed="1" style="max-height: 220px;">
+                                                <div class="pf-product-block__item__detail">
+                                                    <div class="pf-product-block__item__detail-category pf-h4 pf-mb-2">
+                                                        T-Shirt </div>
+
+                                                    <div
+                                                        class="pf-product-block__item__detail-price pf-ui-caption pf-text-muted">
+                                                        Starting from
+                                                        $11.95 </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-6 col-sm-4 col-md-3 pf-product-block__item-container pf-mb-24">
+                                    <div class="pf-border pf-product-block__item pf-product-block__item-160 pf-text-dark text-center pf-pt-24 pf-px-8"
+                                        style="height: 345px">
+                                        <a href="#">
+                                            <div class="pf-product-block__link pf-text-dark">
+                                                <img class="pf-product-block__image img-responsive center-block"
+                                                    src="images/tshirt-2.jpg" alt="Face mask" title="T-Shirt"
+                                                    loading="lazy" data-src-processed="1" style="max-height: 220px;">
+                                                <div class="pf-product-block__item__detail">
+                                                    <div class="pf-product-block__item__detail-category pf-h4 pf-mb-2">
+                                                        T-Shirt </div>
+
+                                                    <div
+                                                        class="pf-product-block__item__detail-price pf-ui-caption pf-text-muted">
+                                                        Starting from
+                                                        $11.95 </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="col-6 col-sm-4 col-md-3 pf-product-block__item-container pf-mb-24">
+                                    <div class="pf-border pf-product-block__item pf-product-block__item-160 pf-text-dark text-center pf-pt-24 pf-px-8"
+                                        style="height: 345px">
+                                        <a href="#">
+                                            <div class="pf-product-block__link pf-text-dark">
+                                                <img class="pf-product-block__image img-responsive center-block"
+                                                    src="images/tshirt-3.jpg" alt="Face mask" title="T-Shirt"
+                                                    loading="lazy" data-src-processed="1" style="max-height: 220px;">
+                                                <div class="pf-product-block__item__detail">
+                                                    <div class="pf-product-block__item__detail-category pf-h4 pf-mb-2">
+                                                        T-Shirt </div>
+
+                                                    <div
+                                                        class="pf-product-block__item__detail-price pf-ui-caption pf-text-muted">
+                                                        Starting from
+                                                        $11.95 </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-6 col-sm-4 col-md-3 pf-product-block__item-container pf-mb-24">
+                                    <div class="pf-border pf-product-block__item pf-product-block__item-160 pf-text-dark text-center pf-pt-24 pf-px-8"
+                                        style="height: 345px">
+                                        <a href="#">
+                                            <div class="pf-product-block__link pf-text-dark">
+                                                <img class="pf-product-block__image img-responsive center-block"
+                                                    src="images/tshirt-4.jpg" alt="Face mask" title="T-Shirt"
+                                                    loading="lazy" data-src-processed="1" style="max-height: 220px;">
+                                                <div class="pf-product-block__item__detail">
+                                                    <div class="pf-product-block__item__detail-category pf-h4 pf-mb-2">
+                                                        T-Shirt </div>
+
+                                                    <div
+                                                        class="pf-product-block__item__detail-price pf-ui-caption pf-text-muted">
+                                                        Starting from
+                                                        $11.95 </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-6 col-sm-4 col-md-3 pf-product-block__item-container pf-mb-24">
+                                    <div class="pf-border pf-product-block__item pf-product-block__item-160 pf-text-dark text-center pf-pt-24 pf-px-8"
+                                        style="height: 345px">
+                                        <a href="#">
+                                            <div class="pf-product-block__link pf-text-dark">
+                                                <img class="pf-product-block__image img-responsive center-block"
+                                                    src="images/tshirt-5.jpg" alt="Face mask" title="T-Shirt"
+                                                    loading="lazy" data-src-processed="1" style="max-height: 220px;">
+                                                <div class="pf-product-block__item__detail">
+                                                    <div class="pf-product-block__item__detail-category pf-h4 pf-mb-2">
+                                                        T-Shirt </div>
+
+                                                    <div
+                                                        class="pf-product-block__item__detail-price pf-ui-caption pf-text-muted">
+                                                        Starting from
+                                                        $11.95 </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-6 col-sm-4 col-md-3 pf-product-block__item-container pf-mb-24">
+                                    <div class="pf-border pf-product-block__item pf-product-block__item-160 pf-text-dark text-center pf-pt-24 pf-px-8"
+                                        style="height: 345px">
+                                        <a href="#">
+                                            <div class="pf-product-block__link pf-text-dark">
+                                                <img class="pf-product-block__image img-responsive center-block"
+                                                    src="images/tshirt-6.jpg" alt="Face mask" title="T-Shirt"
+                                                    loading="lazy" data-src-processed="1" style="max-height: 220px;">
+                                                <div class="pf-product-block__item__detail">
+                                                    <div class="pf-product-block__item__detail-category pf-h4 pf-mb-2">
+                                                        T-Shirt </div>
+
+                                                    <div
+                                                        class="pf-product-block__item__detail-price pf-ui-caption pf-text-muted">
+                                                        Starting from
+                                                        $11.95 </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-6 col-sm-4 col-md-3 pf-product-block__item-container pf-mb-24">
+                                    <div class="pf-border pf-product-block__item pf-product-block__item-160 pf-text-dark text-center pf-pt-24 pf-px-8"
+                                        style="height: 345px">
+                                        <a href="#">
+                                            <div class="pf-product-block__link pf-text-dark">
+                                                <img class="pf-product-block__image img-responsive center-block"
+                                                    src="images/tshirt-7.jpg" alt="Face mask" title="T-Shirt"
+                                                    loading="lazy" data-src-processed="1" style="max-height: 220px;">
+                                                <div class="pf-product-block__item__detail">
+                                                    <div class="pf-product-block__item__detail-category pf-h4 pf-mb-2">
+                                                        T-Shirt </div>
+
+                                                    <div
+                                                        class="pf-product-block__item__detail-price pf-ui-caption pf-text-muted">
+                                                        Starting from
+                                                        $11.95 </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-6 col-sm-4 col-md-3 pf-product-block__item-container pf-mb-24">
+                                    <div class="pf-border pf-product-block__item pf-product-block__item-160 pf-text-dark text-center pf-pt-24 pf-px-8"
+                                        style="height: 345px">
+                                        <a href="#">
+                                            <div class="pf-product-block__link pf-text-dark">
+                                                <img class="pf-product-block__image img-responsive center-block"
+                                                    src="images/tshirt-8.jpg" alt="Face mask" title="T-Shirt"
+                                                    loading="lazy" data-src-processed="1" style="max-height: 220px;">
+                                                <div class="pf-product-block__item__detail">
+                                                    <div class="pf-product-block__item__detail-category pf-h4 pf-mb-2">
+                                                        T-Shirt </div>
+
+                                                    <div
+                                                        class="pf-product-block__item__detail-price pf-ui-caption pf-text-muted">
+                                                        Starting from
+                                                        $11.95 </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-12 pf-mt-8 text-center">
+                                <button class="pf-product-block__toggle pf-btn pf-btn-secondary">Show more</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pf-h4 pf-mt-32 pf-mb-0 text-center">
+                        <span class="wysiwyg pf-d-block">
+                            <p>Visit our <a href="/custom-products" target="_blank" rel="noopener">product catalog</a>
+                                to see the full list of products</p>
+                        </span> </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="banner">
+        </div>
+
+        <hr class="pf-m-0">
+
+        <div id="parallax-scroll-2" style="
+        overflow-x: hidden;
+    ">
+            <div data-pf-lazyload="652b4a578b85bd6e3e23801ef99ca399">
+                <div class="container pf-mt-64">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="pf-h2 pf-my-0 text-center">How it works</h2>
+                            <h3 class="pf-ui-subheading-lg pf-mt-8 pf-mb-40 text-muted text-center">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3>
+
+
+                            <div class="center-block" style="max-width: 480px; width: 100%;">
+
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/F-2677QEXKQ"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div data-pf-lazyload="3c61c93a5a395736d002214db2720a04">
+
+                <div class="container pf-sliding-block pf-sliding-block--horizontal pf-py-64 pf-sliding-block--scrollable"
+                    id="works-sliding-block">
+                    <div class="row">
+                        <div class="col-12 col-xl-10 offset-xl-1 col-lg-12 offset-lg-0 col-sm-10 offset-sm-1">
+                            <div class="row steps-slider text-center">
+                                <div class="col-12 col-xs-6 col-sm-6 col-md-3 pf-sliding-block__item">
+                                    <div class="row no-gutters">
+                                        <div class="col-12">
+                                            <div class="pf-sliding-block__item--image" aria-hidden="true">
+                                                <img src="images/how-printful-works-01.svg"
+                                                    data-src="images/how-printful-works-01.svg"
+                                                    alt="How Printefx Works Step 1" class="img-responsive center-block"
+                                                    loading="lazy" data-src-processed="1">
+                                            </div>
+                                            <div class="pf-sliding-block__step--container pf-mt-8">
+                                                <span class="sr-only sr-only-focusable">
+                                                    Part 1 </span>
+                                                <div class="js--sliding-block-number pf-sliding-block__step--number">
+                                                    <div class="pf-d-flex pf-align-items-center pf-justify-content-center"
+                                                        style="height: 100%;" aria-hidden="true">
+                                                        1 </div>
+                                                </div>
+                                            </div>
+                                            <div class="pf-px-16">
+                                                <h4 class="pf-h4 pf-mt-12">
+                                                    Your online store </h4>
+                                                <p class="pf-ui-body pf-text-muted text-center pf-mt-8 pf-mb-0">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-6 col-sm-6 col-md-3 pf-sliding-block__item">
+                                    <div class="row no-gutters">
+                                        <div class="col-12">
+                                            <div class="pf-sliding-block__item--image" aria-hidden="true">
+                                                <img src="images/how-printful-works-02.svg"
+                                                    data-src="images/how-printful-works-02.svg"
+                                                    alt="How Printful Works Step 2" class="img-responsive center-block"
+                                                    loading="lazy" data-src-processed="1">
+                                            </div>
+                                            <div class="pf-sliding-block__step--container pf-mt-8">
+                                                <span class="sr-only sr-only-focusable">
+                                                    Part 2 </span>
+                                                <div class="js--sliding-block-number pf-sliding-block__step--number">
+                                                    <div class="pf-d-flex pf-align-items-center pf-justify-content-center"
+                                                        style="height: 100%;" aria-hidden="true">
+                                                        2 </div>
+                                                </div>
+                                            </div>
+                                            <div class="pf-px-16">
+                                                <h4 class="pf-h4 pf-mt-12">
+                                                    Alex from India </h4>
+                                                <p class="pf-ui-body pf-text-muted text-center pf-mt-8 pf-mb-0">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-6 col-sm-6 col-md-3 pf-sliding-block__item">
+                                    <div class="row no-gutters">
+                                        <div class="col-12">
+                                            <div class="pf-sliding-block__item--image" aria-hidden="true">
+                                                <img src="images/how-printful-works-03.svg"
+                                                    data-src="images/how-printful-works-03.svg"
+                                                    alt="How Printful Works Step 3" class="img-responsive center-block"
+                                                    loading="lazy" data-src-processed="1">
+                                            </div>
+                                            <div class="pf-sliding-block__step--container pf-mt-8">
+                                                <span class="sr-only sr-only-focusable">
+                                                    Part 3 </span>
+                                                <div class="js--sliding-block-number pf-sliding-block__step--number">
+                                                    <div class="pf-d-flex pf-align-items-center pf-justify-content-center"
+                                                        style="height: 100%;" aria-hidden="true">
+                                                        3 </div>
+                                                </div>
+                                            </div>
+                                            <div class="pf-px-16">
+                                                <h4 class="pf-h4 pf-mt-12">
+                                                    One of our fulfillment locations </h4>
+                                                <p class="pf-ui-body pf-text-muted text-center pf-mt-8 pf-mb-0">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-6 col-sm-6 col-md-3 pf-sliding-block__item">
+                                    <div class="row no-gutters">
+                                        <div class="col-12">
+                                            <div class="pf-sliding-block__item--image" aria-hidden="true">
+                                                <img src="images/how-printful-works-04.svg"
+                                                    data-src="images/how-printful-works-04.svg"
+                                                    alt="How Printful Works Step 4" class="img-responsive center-block"
+                                                    loading="lazy" data-src-processed="1">
+                                            </div>
+                                            <div class="pf-sliding-block__step--container pf-mt-8">
+                                                <span class="sr-only sr-only-focusable">
+                                                    Part 4 </span>
+                                                <div class="js--sliding-block-number pf-sliding-block__step--number">
+                                                    <div class="pf-d-flex pf-align-items-center pf-justify-content-center"
+                                                        style="height: 100%;" aria-hidden="true">
+                                                        4 </div>
+                                                </div>
+                                            </div>
+                                            <div class="pf-px-16">
+                                                <h4 class="pf-h4 pf-mt-12">
+                                                    Your product </h4>
+                                                <p class="pf-ui-body pf-text-muted text-center pf-mt-8 pf-mb-0">
+                                                </p>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry.</p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="pf-m-0 pf-border-top" />
+
+
+        <div class="container pf-py-64" style="">
+            <div data-pf-lazyload="a883159bf41414eb797260b808abd716">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="pf-h2 pf-mt-0 pf-mb-48 pf-mb-md-32 text-center">We integrate with these ecommerce
+                            platforms and marketplaces</h2>
+                    </div>
+                    <div class="container pf-plain-integrations">
+                        <div class="pf-plain-integrations__grid">
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                            <div role="link" tabindex="0" class="pf-plain-integrations__grid__cell "
+                                style="background-image: url(images/client-logo/pe-api.svg); background-repeat: no-repeat; background-size: 120px 50px; background-position: 50% 25%;"
+                                aria-label="Printful API. . " title="Printefx API">
+                                <b class="pf-mb-12">Custom API</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div data-pf-lazyload="8e970009495ae0da77feac6b723c18c6">
+            <div class="whitesmoke pf-py-64">
+                <div class="container">
+                    <div class="row pf-mb-48 text-center">
+                        <div class="col-md-8 offset-md-2">
+                            <h2 class="pf-h2 pf-m-0">
+                                What makes Printefx different </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-xl-10 offset-xl-1">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="pf-mb-32">
+                                        <h3 class="pf-h3 pf-mt-0 pf-mb-4">
+                                            Responsible fulfillment </h3>
+                                        <p class="pf-text-muted pf-ui-body pf-m-0">
+                                            <a href="/sustainability-and-responsibility">Save resources</a> Lorem Ipsum
+                                            is simply dummy text of the printing and typesetting industry. </p>
+                                    </div>
+                                    <div class="pf-mb-32">
+                                        <h3 class="pf-h3 pf-mt-0 pf-mb-4">
+                                            No minimums </h3>
+                                        <p class="pf-text-muted pf-ui-body pf-m-0">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                    <div class="pf-mb-32">
+                                        <h3 class="pf-h3 pf-mt-0 pf-mb-4">
+                                            Custom branding </h3>
+                                        <p class="pf-text-muted pf-ui-body pf-m-0">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="pf-mb-32">
+                                        <h3 class="pf-h3 pf-mt-0 pf-mb-4">
+                                            Free to use </h3>
+                                        <p class="pf-text-muted pf-ui-body pf-m-0">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                    <div class="pf-mb-32">
+                                        <h3 class="pf-h3 pf-mt-0 pf-mb-4">
+                                            Complete automation </h3>
+                                        <p class="pf-text-muted pf-ui-body pf-m-0">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                    <div class="pf-mb-32">
+                                        <h3 class="pf-h3 pf-mt-0 pf-mb-4">
+                                            Best shipping rates </h3>
+                                        <p class="pf-text-muted pf-ui-body pf-m-0">
+                                            WLorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <img src="images/map.png" alt="Printefx fulfillment centers" aria-label=""
+                                        class="img-responsive" loading="lazy" data-src-processed="1">
+                                </div>
+                                <div class="col-sm-12 text-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-pf-lazyload="d37645f56313859294dac1133f5c0834">
+            <div class="pf-pt-40 pf-pb-40 pf-ui-body pf-bg-dark-brown pf-dark-reviews__wrapper" id="main-reviews">
+                <div class="pf-dark-reviews pf-reviews__container container">
+                    <div class="row">
+
+
+
+
+
+                        <div class="col-md-12">
+                            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+
+                                <!-- Carousel Slides / Quotes -->
+                                <div class="carousel-inner text-center">
+
+                                    <!-- Quote 1 -->
+                                    <div class="item active">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p class="text-white"> Lorem Ipsum is simply dummy text of the
+                                                        printing and typesetting industry.Lorem Ipsum is simply dummy
+                                                        text of the printing and typesetting industry.Lorem Ipsum is
+                                                        simply dummy text of the printing and typesetting industry.</p>
+                                                    <small> Reviewer's Name </small>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                    <!-- Quote 2 -->
+                                    <div class="item">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p class="text-white"> Lorem Ipsum is simply dummy text of the
+                                                        printing and typesetting industry.Lorem Ipsum is simply dummy
+                                                        text of the printing and typesetting industry.Lorem Ipsum is
+                                                        simply dummy text of the printing and typesetting industry. </p>
+                                                    <small> Reviewer's Name </small>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                    <!-- Quote 3 -->
+                                    <div class="item">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p class="text-white"> Lorem Ipsum is simply dummy text of the
+                                                        printing and typesetting industry.Lorem Ipsum is simply dummy
+                                                        text of the printing and typesetting industry.Lorem Ipsum is
+                                                        simply dummy text of the printing and typesetting industry. </p>
+                                                    <small> Someone famous </small>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+
+
+                                </div>
+                                <!-- Bottom Carousel Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#quote-carousel" data-slide-to="0" class="active"> <img
+                                            class="img-responsive " src="images/client/1.png" alt="">
+                                    </li>
+                                    <li data-target="#quote-carousel" data-slide-to="1"> <img class="img-responsive"
+                                            src="images/client/2.png" alt="">
+                                    </li>
+                                    <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive"
+                                            src="images/client/3.png" alt="">
+                                    </li>
+
+                                </ol>
+
+                                <!-- Carousel Buttons Next/Prev -->
+                                <!--<a data-slide = "prev" href = "#quote-carousel" class = "left carousel-control"><i class = "fa fa-chevron-left"> </i> </a>
+                    <a data-slide = "next" href = "#quote-carousel" class = "right carousel-control"><i class = "fa fa-chevron-right"></i></a>-->
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container printful-app">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 pf-pt-64 pf-pt-40 pf-pt-md-64">
+                                <h2 class="pf-h2 pf-m-0">
+                                    Manage your store with the Printefx mobile app </h2>
+                                <h3 class="pf-ui-subheading-lg pf-mt-8 pf-mb-0 text-muted">
+                                    Available for iOS and Android </h3>
+                                <a class="pf-btn pf-btn-primary pf-mt-24" href="#">
+                                    Learn more </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 pf-pt-md-32">
+                                <div class="img-container pf-mt-40 pf-mt-md-0">
+                                    <img class="img-responsive pf-m-auto" alt="Printful App View"
+                                        src="images/iphones.png" style="max-height: 300px" loading="lazy"
+                                        data-src-processed="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-pf-lazyload="283fdc75750d4bdbd98d90e9a88d0cce">
+            <div class="brown large-volume-box">
+                <div class="container">
+                    <div class="row padding-vertical-50 text-center">
+                        <div class="col-xs-10 offset-xs-2">
+                            <div class="row">
+                                <div class="col-xs-10">
+                                    <h2 class="pf-h2 pf-mt-0 text-center" id="large-volume-block-title-vwo">
+                                        Managing a large volume business? </h2>
+                                    <h3 class="pf-ui-subheading-lg text-center margin-bottom-40 pf-text-white">
+                                        <span class="wysiwyg pf-d-block">Get in touch with our <strong>sales
+                                                team</strong>
+                                            to learn how Printful can help you grow your business</span> </h3>
+                                </div>
+                                <div class="col-md-5 col-xs-10">
+                                    <div data-vue-root="XKAFAtUdsr377dzQ"
+                                        data-vue-components="[&quot;volume-order-form&quot;]" data-vuex-stores="[]">
+                                        <form class="volume-order text-left">
+                                            <div class="pf-mb-24 pf-form-group ">
+                                                <label for="1" class="ss__text pf-h5 pf-form--label"> Email
+                                                </label>
+                                                <input placeholder="" name="email" id="1" type="text"
+                                                    class="pf-form-control  pf-ui-body" aria-required="true"
+                                                    aria-invalid="false">
+                                            </div>
+                                            <div class="pf-mb-24 pf-form-group "><label
+                                                    class="ss__text pf-h5 pf-form--label">
+                                                    Annual ecommerce revenue
+                                                </label>
+                                                <div class="dropdown dropdown-input form-inline ">
+                                                    <button type="button"
+                                                        class="pf-px-0 dropdown-input__button dropdown-toggle ">
+                                                        <div class="pf-pl-16 dropdown-input__button--title">
+                                                        </div>
+                                                    </button>
+                                                    <div
+                                                        class="dropdown-input__dropdown dropdown-menu pf-p-0 dropdown-input__menu pf-border-top-0 ">
+                                                        <ul class="dropdown-input__menu--list pf-p-0 pf-m-0 pf-py-8">
+                                                            <li class="dropdown-input__menu__item">
+                                                                <div
+                                                                    class="pf-items-min-height pf-pl-16 pf-py-8 pf-d-inline-block pf-w-100">
+                                                                    <div class="pf-d-flex">
+                                                                        <span
+                                                                            class="pf-text-dark pf-ui-body pf-d-inline-flex">
+                                                                            Less than $100,000
+                                                                        </span></div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="dropdown-input__menu__item">
+                                                                <div
+                                                                    class="pf-items-min-height pf-pl-16 pf-py-8 pf-d-inline-block pf-w-100">
+                                                                    <div class="pf-d-flex">
+                                                                        <span
+                                                                            class="pf-text-dark pf-ui-body pf-d-inline-flex">
+                                                                            $100,000 - $499,999
+                                                                        </span></div>
+
+                                                                </div>
+                                                            </li>
+                                                            <li class="dropdown-input__menu__item">
+                                                                <div
+                                                                    class="pf-items-min-height pf-pl-16 pf-py-8 pf-d-inline-block pf-w-100">
+                                                                    <div class="pf-d-flex">
+                                                                        <span
+                                                                            class="pf-text-dark pf-ui-body pf-d-inline-flex">
+                                                                            $500,000 - $999,999
+                                                                        </span></div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="dropdown-input__menu__item">
+                                                                <div
+                                                                    class="pf-items-min-height pf-pl-16 pf-py-8 pf-d-inline-block pf-w-100">
+                                                                    <div class="pf-d-flex">
+                                                                        <span
+                                                                            class="pf-text-dark pf-ui-body pf-d-inline-flex">
+                                                                            $1,000,000 and more
+                                                                        </span></div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="submit"
+                                                class="ss__text  pf-btn pf-btn-primary pf-mb-12 pf-w-100 pf-w-sm-auto">
+                                                Contact sales
+                                            </button>
+                                            <div>
+
+                                                <div class="pf-text-white pf-mb-40 pf-mb-md-0">This site is protected by
+                                                    reCAPTCHA and the Google <a class="pf-link-white" target="_blank"
+                                                        href="#" rel="nofollow noopener">Privacy Policy</a> and <a
+                                                        class="pf-link-white" target="_blank" href="#"
+                                                        rel="nofollow noopener">Terms of Service</a> apply.</div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-xs-10">
+                                    <div class="volume-item">
+                                        <div class="ss__tick ss__tick pf-d-flex pf-align-items-start">
+                                            <i class="fa fa-check" aria-hidden="true">&nbsp;&nbsp;</i>
+                                            <div>
+                                                <p class="pf-h4 volume-item__heading">$534M+</p>
+                                                <p class="pf-ui-body volume-item__subheading">
+                                                    sold by customers through Printful </p>
+                                            </div>
+                                        </div>
+                                        <div class="ss__tick pf-d-flex pf-align-items-start">
+                                            <i class="fa fa-check" aria-hidden="true">&nbsp;</i>
+                                            <div>
+                                                <p class="pf-h4 volume-item__heading">24.4M+</p>
+                                                <p class="pf-ui-body volume-item__subheading">
+                                                    items fulfilled to date </p>
+                                            </div>
+                                        </div>
+                                        <div class="ss__tick pf-d-flex pf-align-items-start">
+                                            <i class="fa fa-check" aria-hidden="true">&nbsp;</i>
+                                            <div>
+                                                <p class="pf-h4 volume-item__heading">$39.8 million
+                                                </p>
+                                                <p class="pf-ui-body volume-item__subheading"> invested in printing
+                                                    equipment and tech </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div data-pf-lazyload="1f1e8aa7481e82aae01c57b3fefb1796" style="background: #f8f8f8!important">
+            <div class="container contactInfo pf-py-64">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="pf-h2 pf-mt-0"><span class="wysiwyg pf-d-block">What our customers are selling</h2>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel1"
+                        data-interval="1000">
+                        <div class="MultiCarousel-inner" style="transform: translateX(0px); width: 4857.6px;">
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-1.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-2.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-3.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-4.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-5.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-6.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-1.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-2.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-3.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-4.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-5.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-6.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-1.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-2.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-3.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item">
+
+                                <div class="pad15 pf-border">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/tshirt-4.jpg">
+                                        <p class="lead">People Bomber Jacket</p>
+                                        <p>$ 445</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="btn btn-primary leftLst over">&lt;</button>
+                        <button class="btn btn-primary rightLst">&gt;</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div data-pf-lazyload="e1900a34eae501abaa2270239d3bb632" style="">
+            <div class="container pf-mt-64 pf-mb-40">
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-4 pf-pr-sm-0 pf-d-sm-flex ">
+                                <img src="https://files.cdn.printful.com/o/upload/file-upload/64/64c6a1ec8863eb6ab298f3cb4c530461_l"
+                                    data-src="https://files.cdn.printful.com/o/upload/file-upload/64/64c6a1ec8863eb6ab298f3cb4c530461_l"
+                                    alt="districtclothing" class="img-responsive pf-w-100" style="object-fit: cover;"
+                                    loading="lazy" data-src-processed="1">
+                            </div>
+                            <div class="col-sm-6 col-lg-8 pf-mt-0 pf-pl-sm-0">
+                                <div
+                                    class="pf-bg-lighter pf-h-100 pf-px-24 pf-px-sm-32 pf-pt-24 pf-pb-32 pf-py-sm-32 pf-align-items-center pf-d-sm-flex">
+                                    <div>
+                                        <img src="https://www.printful.com/static/v789/images/layout/quote-light-grey.png"
+                                            data-src="https://www.printful.com/static/v789/images/layout/quote-light-grey.png"
+                                            alt="" class="img-responsive" style="position: absolute; height: 56px"
+                                            loading="lazy" data-src-processed="1">
+                                        <p class="pf-m-0 pf-pt-12 pf-ui-subheading-lg">
+                                            <span class="wysiwyg pf-d-block">"If you <strong>Lorem Ipsum is simply dummy
+                                                    text of the printing and typesetting industry.Lorem Ipsum is simply
+                                                    dummy text of the printing and typesetting industry.Lorem Ipsum is
+                                                    simply dummy text of the printing and typesetting industry.Lorem
+                                                    Ipsum is simply dummy text of the printing and typesetting
+                                                    industry.Lorem Ipsum is simply dummy text of the printing and
+                                                    typesetting industry.</strong>."</span> </p>
+                                        <p class="pf-m-0 pf-pt-24 pf-ui-body pf-text-muted">
+                                            <span class="wysiwyg pf-d-block">Dionna Dorsey of <a href="#"
+                                                    target="_blank" rel="noopener">District of Clothing</a> Lorem Ipsum
+                                                is simply dummy text of the printing and typesetting industry.Lorem
+                                                Ipsum is simply dummy text of the printing and typesetting
+                                                industry.Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry.</span> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 pf-mt-64 pf-mb-40">
+                                <h2 class="pf-h2 pf-my-0 text-center">
+                                    Businesses that trust Printefx </h2>
+                            </div>
+                        </div>
+
+                        <div class="row pf-align-items-center">
+                            <div class="col-6 col-sm-4 col-md-2 pf-mb-24">
+                                <a href="#" target="_blank">
+                                    <img src="images/client-logo/logo1.png" data-src="images/client-logo/logo1.png"
+                                        alt="takeoutorder" class="img-responsive pf-mx-auto pf-w-auto" style=""
+                                        loading="lazy" data-src-processed="1">
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-2 pf-mb-24">
+                                <a href="#" target="_blank">
+                                    <img src="images/client-logo/logo2.png" data-src="images/client-logo/logo2.png"
+                                        alt="takeoutorder" class="img-responsive pf-mx-auto pf-w-auto" style=""
+                                        loading="lazy" data-src-processed="1">
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-2 pf-mb-24">
+                                <a href="#" target="_blank">
+                                    <img src="images/client-logo/logo3.png" data-src="images/client-logo/logo3.png"
+                                        alt="takeoutorder" class="img-responsive pf-mx-auto pf-w-auto" style=""
+                                        loading="lazy" data-src-processed="1">
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-2 pf-mb-24">
+                                <a href="#" target="_blank">
+                                    <img src="images/client-logo/logo5.png" data-src="images/client-logo/logo5.png"
+                                        alt="takeoutorder" class="img-responsive pf-mx-auto pf-w-auto" style=""
+                                        loading="lazy" data-src-processed="1">
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-2 pf-mb-24">
+                                <a href="#" target="_blank">
+                                    <img src="images/client-logo/logo6.png" data-src="images/client-logo/logo6.png"
+                                        alt="takeoutorder" class="img-responsive pf-mx-auto pf-w-auto" style=""
+                                        loading="lazy" data-src-processed="1">
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-2 pf-mb-24">
+                                <a href="#" target="_blank">
+                                    <img src="images/client-logo/logo7.png" data-src="images/client-logo/logo7.png"
+                                        alt="takeoutorder" class="img-responsive pf-mx-auto pf-w-auto" style=""
+                                        loading="lazy" data-src-processed="1">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div data-pf-lazyload="f7dbcefd304eed1db2ea05be2f0de12b">
+            <div class="whitesmoke open-form">
+                <div class="container pf-p-0">
+                    <div class="container padding-vertical-50">
+                        <div class="row text-center">
+                            <div class="col-md-12 open-form__title">
+                                <h2 class="pf-h2 pf-m-0 margin-bottom-40">
+                                    Create your Printefx account for <span class="pf-text-red">FREE</span> <img
+                                        src="images/v.svg" alt="Printful arrow" loading="lazy">
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div
+                                class="col-md-5 order-md-2 pf-d-flex pf-align-items-center pf-py-40 pf-py-md-0 pf-px-sm-40 open-form__form-wrap">
+                                <div class="form-wrapper main-auth__form pf-pt-md-0">
+                                    <form id="registrationForm" action="/auth/register" method="GET">
+                                        <div>
+                                            <div class="form-group field-customer-fullname">
+                                                <label class="control-label" for="customer-fullname">Full name</label>
+                                                <input type="text" id="customer-fullname"
+                                                    class="form-control inspectletIgnore" name="fullName">
+
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="form-group field-customer-email required">
+                                                <label class="control-label" for="customer-email">Email</label>
+                                                <input type="text" id="customer-email"
+                                                    class="form-control inspectletIgnore" name="email"
+                                                    aria-required="true">
+
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="submit" class="pf-btn pf-btn-primary pf-mr-8" value="Sign up"
+                                                onclick="beginRegistrationTracking('homepage reg. form');">
+                                            <div class="clearfix"></div>
+                                        </div>
+
+                                    </form>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div
+                                class="offset-md-1 col-md-5 order-md-1 pf-text-muted pf-ui-body pf-p-40 pf-pr-md-32 pf-py-md-0 pf-pl-md-0">
+                                <div class="pf-d-flex">
+                                    <div>
+                                        <div class="pf-pr-12 pf-pt-4">
+                                            <i class="fa fa-check" aria-hidden="true">&nbsp;&nbsp;</i>
+                                        </div>
+                                    </div>
+                                    <div class="pf-mb-32">
+                                        <h3 class="pf-h3 pf-mt-0 pf-mb-4">
+                                            No sign-up or monthly fees </h3>
+                                        Fill your store with as many products as you want and <strong>only pay when you
+                                            sell</strong> or order for yourself
+                                    </div>
+                                </div>
+                                <div class="pf-d-flex">
+                                    <div>
+                                        <div class="pf-pr-12 pf-pt-4">
+                                            <i class="fa fa-check" aria-hidden="true">&nbsp;&nbsp;</i>
+                                        </div>
+                                    </div>
+                                    <div class="pf-mb-32">
+                                        <h3 class="pf-h3 pf-mt-0 pf-mb-4">
+                                            No order minimums </h3>
+                                        Feel free to experiment with your store <strong>with no risk of unsold
+                                            inventory</strong>
+                                    </div>
+                                </div>
+                                <div class="pf-d-flex">
+                                    <div>
+                                        <div class="pf-pr-12 pf-pt-4">
+                                            <i class="fa fa-check" aria-hidden="true">&nbsp;&nbsp;</i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="pf-h3 pf-mt-0 pf-mb-4">
+                                            More time for yourself </h3>
+                                        Focus on <strong>building your brand:</strong> leave printing, packing and
+                                        shipping
+                                        to us
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-pf-lazyload="1f1e8aa7481e82aae01c57b3fefb1796">
+            <div class="container contactInfo pf-py-64">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="pf-h2 pf-mt-0"><span class="wysiwyg pf-d-block">Want to get in touch?<br>We'd love to
+                                hear
+                                from you!</span></h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="pf-ui-body col-xs-12 text-center">
+                        <span class="wysiwyg pf-d-block">
+                            <p><strong>Chat with us</strong> from the bottom-right corner of any Printful page!</p>
+                            <p>Find more contacts here: <a title="Printful Contacts" href="#" target="_blank"
+                                    rel="noreferrer noopener"><strong>printefx.com/contacts</strong></a></p>
+                        </span>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div data-pf-lazyload="e03c25093d3aee2b6220b09d275ee30f"></div>
+        <div data-pf-lazyload="5afa0578033540f04a949ab2fdf1dff0"></div>
+        <!-- Structured Data -->
+
+
+    </div>
+
+
+
+    <div data-vue-root="0vMOKqMDdfjilSVQ" data-vue-components='["back-to-top-button"]' data-vuex-stores='[]'>
+        <back-to-top-button :footer="&quot;large&quot;"></back-to-top-button>
+    </div>
+    <div class="page-footer pf-ui-body ">
+        <div class="container pf-pt-64 pf-pb-40">
+            <div class="row row-flex page-footer__row">
+                <div class="col-sm-4 pf-mb-sm-40 col-md-2 pf-mb-0 ">
+                    <div data-toggle="collapse" data-target="#submenu-0" class="page-footer__submenu visible-xs">
+                        <div class="pf-h4 pf-m-0 pf-d-flex pf-justify-content-between">
+                            Sell with Printefx <span class="submenu-caret"></span>
+                        </div>
+                    </div>
+                    <div class="pf-h4 pf-m-0 hidden-xs">
+                        Sell with Printefx </div>
+                    <ul class="nav nav-stacked navbar-collapse collapse pf-p-0 pf-mt-12" id="submenu-0">
+                        <li class="pf-mt-0 pf-mb-8 pf-mt-8">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-connect-your-store">Connect your store</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-print-on-demand">Print on demand</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-use-warehousing-amp-fulfillment">Use Warehousing &amp;
+                                    Fulfillment</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-sell-online-without-inventory">Sell online without inventory</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-grow-your-enterprise">Grow your enterprise</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 pf-mb-sm-40 col-md-2 pf-mb-0 pf-mt-24 pf-mt-sm-0">
+                    <div data-toggle="collapse" data-target="#submenu-1" class="page-footer__submenu visible-xs">
+                        <div class="pf-h4 pf-m-0 pf-d-flex pf-justify-content-between">
+                            Create custom products <span class="submenu-caret"></span>
+                        </div>
+                    </div>
+                    <div class="pf-h4 pf-m-0 hidden-xs">
+                        Create custom products </div>
+                    <ul class="nav nav-stacked navbar-collapse collapse pf-p-0 pf-mt-12" id="submenu-1">
+                        <li class="pf-mt-0 pf-mb-8 pf-mt-8">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-product-catalog">Product catalog</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-design-your-own">Design your own</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-quality">Quality</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 pf-mb-sm-40 col-md-2 pf-mb-0 pf-mt-24 pf-mt-sm-0">
+                    <div data-toggle="collapse" data-target="#submenu-2" class="page-footer__submenu visible-xs">
+                        <div class="pf-h4 pf-m-0 pf-d-flex pf-justify-content-between">
+                            Explore <span class="submenu-caret"></span>
+                        </div>
+                    </div>
+                    <div class="pf-h4 pf-m-0 hidden-xs">
+                        Explore </div>
+                    <ul class="nav nav-stacked navbar-collapse collapse pf-p-0 pf-mt-12" id="submenu-2">
+                        <li class="pf-mt-0 pf-mb-8 pf-mt-8">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-blog">Blog</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-printful-lessons">Printful Lessons</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-newsroom">Newsroom</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-webinars">Webinars</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 pf-mb-sm-40 col-md-2 pf-mb-0 pf-mt-24 pf-mt-sm-0">
+                    <div data-toggle="collapse" data-target="#submenu-3" class="page-footer__submenu visible-xs">
+                        <div class="pf-h4 pf-m-0 pf-d-flex pf-justify-content-between">
+                            Resources <span class="submenu-caret"></span>
+                        </div>
+                    </div>
+                    <div class="pf-h4 pf-m-0 hidden-xs">
+                        Resources </div>
+                    <ul class="nav nav-stacked navbar-collapse collapse pf-p-0 pf-mt-12" id="submenu-3">
+                        <li class="pf-mt-0 pf-mb-8 pf-mt-8">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-help-center">Help Center</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-shipping">Shipping</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-returns">Returns</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-policies">Policies</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-gift-cards">Gift Cards</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-sitemap">Sitemap</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 pf-mb-sm-40 col-md-2 pf-mb-0 pf-mt-24 pf-mt-sm-0">
+                    <div data-toggle="collapse" data-target="#submenu-4" class="page-footer__submenu visible-xs">
+                        <div class="pf-h4 pf-m-0 pf-d-flex pf-justify-content-between">
+                            About Printful <span class="submenu-caret"></span>
+                        </div>
+                    </div>
+                    <div class="pf-h4 pf-m-0 hidden-xs">
+                        About Printful </div>
+                    <ul class="nav nav-stacked navbar-collapse collapse pf-p-0 pf-mt-12" id="submenu-4">
+                        <li class="pf-mt-0 pf-mb-8 pf-mt-8">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-our-story">Our story</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-contacts">Contacts</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-sustainability-amp-responsibility">Sustainability &amp;
+                                    Responsibility</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-affiliate-program">Affiliate Program</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-jobs">Jobs</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 pf-mb-sm-40 col-md-2 pf-mb-0 pf-mt-24 pf-mt-sm-0">
+                    <div data-toggle="collapse" data-target="#submenu-5" class="page-footer__submenu visible-xs">
+                        <div class="pf-h4 pf-m-0 pf-d-flex pf-justify-content-between">
+                            Latest updates <span class="submenu-caret"></span>
+                        </div>
+                    </div>
+                    <div class="pf-h4 pf-m-0 hidden-xs">
+                        Latest updates </div>
+                    <ul class="nav nav-stacked navbar-collapse collapse pf-p-0 pf-mt-12" id="submenu-5">
+                        <li class="pf-mt-0 pf-mb-8 pf-mt-8">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-holiday-order-deadlines">Holiday order deadlines</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary ">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-holiday-marketing">Holiday marketing</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-fulfillment-updates">Fulfillment updates</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                        <li class="pf-mt-0 pf-mb-8 ">
+                            <a href="#" class="pf-p-0 pf-m-0">
+                                <span id="footer-bfcm-2020-predictions">BFCM 2020 predictions</span>
+                                <span class="pf-badge pf-badge-small pf-badge--primary pf-d-none">
+                                    New </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pf-mt-48 pf-mt-sm-8 pf-d-sm-flex pf-justify-content-between pf-align-items-center">
+                <div class="col-12 col-sm-4">
+
+                    <img src="images/logo.png">
+                    <div class="pf-h5 pf-text-dark pf-mt-16 pf-mb-0">So much more than printing</div>
+                    <p class="pf-ui-body pf-text-muted pf-mt-2 pf-mb-16">
+                        Trusted to deliver 24.3M items </br> since 2013</p>
+                </div>
+                <div class="col-12 col-sm-8 pf-d-sm-flex pf-align-items-center pf-flex-row-reverse">
+
+                    <div class="pf-d-flex pf-flex-row pf-flex-wrap">
+                        <a href="#"><img class="pf-mr-4 pf-mb-4 socialmdia" src="images/socialmedia/facebook.svg"
+                                alt="facebook"></a>
+                        <a href="#"><img class="pf-mr-4 pf-mb-4 socialmdia" src="images/socialmedia/instagram.svg"
+                                alt="instagram"></a>
+                        <a href="#"><img class="pf-mr-4 pf-mb-4 socialmdia" src="images/socialmedia/linkedin.svg"
+                                alt="linkedin"></a>
+                        <a href="#"><img class="pf-mr-4 pf-mb-4 socialmdia" src="images/socialmedia/youtube.svg"
+                                alt="youtube"></a>
+                        <a href="#"><img class="pf-mr-4 pf-mb-4 socialmdia" src="images/socialmedia/twitter.svg"
+                                alt="twitter"></a>
+                        <a href="#"><img class="pf-mr-4 pf-mb-4 socialmdia" src="images/socialmedia/pinterest.svg"
+                                alt="pinterest"></a>
+
+                    </div>
+
+
+
+
+
+                    <ul class="pf-d-flex pf-mb-0 pf-mr-16 pf-p-0 pf-mt-16 pf-mt-sm-0" id="footer-settings">
+
+                        <li class="pf-d-inline-block">
+                            <ul class="nav language-menu pf-mx-8 pf-d-sm-flex ">
+                                <li class="dropdown">
+                                    <a href="javascript:"
+                                        class="pf-p-0 dropdown-toggle pf-d-flex pf-flex-column pf-flex-md-row pf-align-items-center user-settings"
+                                        data-toggle="dropdown" id="language-menu-toggle">
+                                        <i class="header__link__icon pf-i pf-i-earth pf-i-24 "></i>
+                                        <span
+                                            class="pf-d-none pf-d-md-inline-block header__link__text inspectlet-sensitive pf-ml-4">EN</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-right pf-ui-body pf-mt-12"
+                                        id="language-menu">
+                                        <li>
+                                            <a href="#" class="active">
+                                                English (EN)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="">
+                                                Español (ES)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="">
+                                                Français (FR)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="">
+                                                Deutsch (DE)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="">
+                                                日本語 (JP)
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pf-d-flex">
+                            <a href="javascript:"
+                                class=" pf-mx-8 user-settings js-user-settings-toggle pf-flex-column pf-flex-md-row pf-align-items-center">
+                                <i class="header__link__icon pf-i pf-i-24 pf-i-currency-usd"></i>
+                                <span class="pf-d-none pf-d-md-inline-block header__link__text pf-ml-sm-4">USD</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="pf-bg-lighter pf-pt-24">
+            <div class="container">
+                <div class="pf-d-flex pf-flex-column pf-flex-xs-row pf-flex-wrap pf-justify-content-between">
+                    <div>
+                        <p class="pf-ui-legal pf-mb-4 pf-text-muted">Payment methods we accept:</p>
+                        <div class="pf-d-flex pf-flex-row pf-flex-wrap">
+                            <img class="pf-mr-4 pf-mb-4" height="24px" src="images/paymenticon/visa-light-noborder.svg"
+                                alt="visa">
+                            <img class="pf-mr-4 pf-mb-4" height="24px"
+                                src="images/paymenticon/mastercard-light-noborder.svg" alt="mastercard">
+                            <img class="pf-mr-4 pf-mb-4" height="24px"
+                                src="images/paymenticon/american-express-light-noborder.svg" alt="american express">
+                            <img class="pf-mr-4 pf-mb-4" height="24px"
+                                src="images/paymenticon/paypal-light-noborder.svg" alt="paypal">
+                            <img class="pf-mr-4 pf-mb-4" height="24px"
+                                src="images/paymenticon/maestro-light-noborder.svg" alt="maestro">
+                            <img class="pf-mr-4 pf-mb-4" height="24px"
+                                src="images/paymenticon/discover-light-noborder.svg" alt="discover">
+                            <img class="pf-mr-4 pf-mb-4" height="24px"
+                                src="images/paymenticon/diners-club-light-noborder.svg" alt="diners club">
+                            <img class="pf-mr-4 pf-mb-4" height="24px" src="images/paymenticon/jcb-light-noborder.svg"
+                                alt="jcb">
+                            <img class="pf-mr-4 pf-mb-4" height="24px"
+                                src="images/paymenticon/union-pay-light-noborder.svg" alt="union pay">
+                        </div>
+                    </div>
+                    <div class="pf-mt-12 pf-mt-xs-0">
+                        <p class="pf-ui-legal pf-mb-4 pf-text-muted">We deliver with:</p>
+                        <div class="pf-d-flex pf-flex-row pf-flex-wrap">
+                            <img class="pf-mr-4 pf-mb-4" height="24px" src="images/paymenticon/fedex.png" alt="fedex">
+                            <img class="pf-mr-4 pf-mb-4" height="24px" src="images/paymenticon/usps.svg" alt="usps">
+                            <img class="pf-mr-4 pf-mb-4" height="24px" src="images/paymenticon/dhl.svg" alt="dhl">
+                            <img class="pf-mr-4 pf-mb-4" height="24px" src="images/paymenticon/dpd.svg" alt="dpd">
+                        </div>
+                    </div>
+                </div>
+                <hr class="pf-mt-12 pf-m-0">
+            </div>
+        </div>
+
+
+        <div class="pf-bg-lighter">
+            <div class="container pf-py-24">
+                <div class="pf-d-flex pf-justify-content-between pf-align-items-center">
+                    <p class="pf-ui-legal pf-m-0 pf-text-muted">&copy; 2013 - 2020 Printefx&reg; Inc. All Rights
+                        reserved.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+
+        $(document).ready(function () {
+            var itemsMainDiv = ('.MultiCarousel');
+            var itemsDiv = ('.MultiCarousel-inner');
+            var itemWidth = "";
+
+            $('.leftLst, .rightLst').click(function () {
+                var condition = $(this).hasClass("leftLst");
+                if (condition)
+                    click(0, this);
+                else
+                    click(1, this)
+            });
+
+            ResCarouselSize();
+
+
+
+
+            $(window).resize(function () {
+                ResCarouselSize();
+            });
+
+            //this function define the size of the items
+            function ResCarouselSize() {
+                var incno = 0;
+                var dataItems = ("data-items");
+                var itemClass = ('.item');
+                var id = 0;
+                var btnParentSb = '';
+                var itemsSplit = '';
+                var sampwidth = $(itemsMainDiv).width();
+                var bodyWidth = $('body').width();
+                $(itemsDiv).each(function () {
+                    id = id + 1;
+                    var itemNumbers = $(this).find(itemClass).length;
+                    btnParentSb = $(this).parent().attr(dataItems);
+                    itemsSplit = btnParentSb.split(',');
+                    $(this).parent().attr("id", "MultiCarousel" + id);
+
+
+                    if (bodyWidth >= 1200) {
+                        incno = itemsSplit[2];
+                        itemWidth = sampwidth / incno;
+                    }
+                    else if (bodyWidth >= 992) {
+                        incno = itemsSplit[1];
+                        itemWidth = sampwidth / incno;
+                    }
+                    else if (bodyWidth >= 768) {
+                        incno = itemsSplit[1];
+                        itemWidth = sampwidth / incno;
+                    }
+                    else {
+                        incno = itemsSplit[0];
+                        itemWidth = sampwidth / incno;
+                    }
+                    $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+                    $(this).find(itemClass).each(function () {
+                        $(this).outerWidth(itemWidth);
+                    });
+
+                    $(".leftLst").addClass("over");
+                    $(".rightLst").removeClass("over");
+
+                });
+            }
+
+
+            //this function used to move the items
+            function ResCarousel(e, el, s) {
+                var leftBtn = ('.leftLst');
+                var rightBtn = ('.rightLst');
+                var translateXval = '';
+                var divStyle = $(el + ' ' + itemsDiv).css('transform');
+                var values = divStyle.match(/-?[\d\.]+/g);
+                var xds = Math.abs(values[4]);
+                if (e == 0) {
+                    translateXval = parseInt(xds) - parseInt(itemWidth * s);
+                    $(el + ' ' + rightBtn).removeClass("over");
+
+                    if (translateXval <= itemWidth / 2) {
+                        translateXval = 0;
+                        $(el + ' ' + leftBtn).addClass("over");
+                    }
+                }
+                else if (e == 1) {
+                    var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+                    translateXval = parseInt(xds) + parseInt(itemWidth * s);
+                    $(el + ' ' + leftBtn).removeClass("over");
+
+                    if (translateXval >= itemsCondition - itemWidth / 2) {
+                        translateXval = itemsCondition;
+                        $(el + ' ' + rightBtn).addClass("over");
+                    }
+                }
+                $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+            }
+
+            //It is used to get some elements from btn
+            function click(ell, ee) {
+                var Parent = "#" + $(ee).parent().attr("id");
+                var slide = $(Parent).attr("data-slide");
+                ResCarousel(ell, Parent, slide);
+            }
+
+        });
+
+    </script>
+
+    <style>
+        .MultiCarousel {
+            float: left;
+            overflow: hidden;
+            padding: 15px;
+            width: 100%;
+            position: relative;
+        }
+
+        .MultiCarousel {
+            Height: 100%;
+        }
+
+        .MultiCarousel .MultiCarousel-inner {
+            transition: 1s ease all;
+            float: left;
+        }
+
+        .MultiCarousel .MultiCarousel-inner .item {
+            float: left;
+        }
+
+        .MultiCarousel .MultiCarousel-inner .item>div {
+            padding: 10px;
+            margin: 10px;
+            background: #fff;
+            color: #666;
+        }
+
+        .MultiCarousel .leftLst,
+        .MultiCarousel .rightLst {
+            position: absolute;
+            border-radius: 50%;
+            top: calc(50% - 20px);
+        }
+
+        .MultiCarousel .leftLst {
+            left: 0;
+        }
+
+        .MultiCarousel .rightLst {
+            right: 0;
+        }
+
+        .MultiCarousel .leftLst.over,
+        .MultiCarousel .rightLst.over {
+            pointer-events: none;
+            background: #ccc;
+        }
+
+
+        a .pad15 {
+            background-color: #ffffff;
+            padding: 10px;
+            color: #666;
+            border: 2px solid #ccc;
+        }
+
+        .pad15 img {
+            max-width: 100%;
+        }
+
+        .pad15:hover {
+
+            box-shadow: 0 1px 7px 0 rgba(90, 90, 90, .5);
+
+        }
+    </style>
+
+<script  src="js/printEfxNavScript.js"></script>
+
+</body>
+
+</html>
